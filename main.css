@@ -166,3 +166,7 @@ section::after {
 {
   background-color: #50728d;
 }
+
+#Confirm{
+  width: 100%;
+}
