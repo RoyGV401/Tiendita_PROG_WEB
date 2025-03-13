@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora</title>
+    <link rel="script" href="calc_2.js" />
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  
+  <body id="main_body">
+    <script src="calc_2.js"></script>
+    <div id="container">
+    <table class = "artist_row">
+      <tr>
+        <th>
+          <div class="artista">
+            <h1 class = "artist_title" id="art_title">CASIO ƒx</h1>
+            <div id = "result">
+              <h1 id ="result_value"></h1>
+            </div>
+            <br>
+            <div>
+              <table id = "calc_table">
+                <tr>
+                  <th>
+                    <button onclick="enterValue(7)" class="button-5">7</button>
+                  </th>
+                  <th>
+                    <button onclick="enterValue(8)" class="button-5">8</button>
+                  </th>
+                  <th>
+                    <button onclick="enterValue(9)" class="button-5">9</button>
+                  </th>
+                  <th>
+                    <button onclick="enterValue('*')" id="operator" class="button-5">x</button>
+                  </th>
+                </tr>
+                <br>
+              </table>
+            </div>
+            <div>
+              <table id = "calc_table">
+                <tr>
+                  <th>
+                    <button onclick="enterValue(4)" class="button-5">4</button>
+                  </th>
+                  <th>
+                    <button onclick="enterValue(5)" class="button-5">5</button>
+                  </th>
+                  <th>
+                    <button onclick="enterValue(6)" class="button-5">6</button>
+                  </th>
+                  <th>
+                    <button onclick="enterValue('-')" id="operator" class="button-5">-</button>
+                  </th>
+                </tr>
+                <br>
+              </table>
+            </div>
+            <div>
+              <table id = "calc_table">
+                <tr>
+                  <th>
+                    <button onclick="enterValue(1)" class="button-5">1</button>
+                  </th>
+                  <th>
+                    <button onclick="enterValue(2)" class="button-5">2</button>
+                  </th>
+                  <th>
+                    <button onclick="enterValue(3)" class="button-5">3</button>
+                  </th>
+                  <th>
+                    <button onclick="enterValue('+')" id="operator" class="button-5">+</button>
+                  </th>
+                </tr>
+                <br>
+              </table>
+            </div>
+            <div>
+              <table id = "calc_table">
+                <tr>
+                  <th>
+                    <button onclick="enterValue(0)" class="button-5">0</button>
+                  </th>
+                  <th>
+                    <button onclick="enterPar1()" id="operator" class="button-5">(</button>
+                  </th>
+                  <th>
+                    <button onclick="enterPar2()" id="operator" class="button-5">)</button>
+                  </th>
+                  <th>
+                    <button onclick="enterValue('/')" id="operator" class="button-5">÷</button>
+                  </th>
+
+                </tr>
+                <br>
+              </table>
+            </div>
+            <div>
+              <table id = "calc_table">
+                <tr>
+                  <th>
+                    <button onclick="doEnter()" class="button-5" id="enter">=</button>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <button onclick="doDelete()" class="button-5" id="del">DEL</button>
+                  </th>
+                </tr>
+                <br>
+              </table>
+            </div>
+          </div>
+          
+        </th>
+        <th></th>
+      </tr>
+    </table>
+    </div>
+</body>
+</html>
