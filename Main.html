@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Calculadora</title>
+    <title>Fruteria</title>
     <link rel="script" href="main.js" />
 
     <link rel="stylesheet" href="main.css" />
+    <script>
+      window.onload = function load()
+      {
+        addAll();
+      };
+    </script>
   </head>
   
   <body id="main_body">
@@ -19,35 +25,21 @@
             <div>
               <div class="tabla_fondo">
                 <table id = "calc_table">
-                  <tr style="background-color: transparent;">
+                  <tr class="tr_transparent">
                     <th>
-                      <h1 style="background-color: #484868; border-radius: 10px; padding: 10px;">Producto</h1>
+                      <h1 class="shop_header">Producto</h1>
                     </th>
                     <th>
-                      <h1 style="background-color: #484868; border-radius: 10px; padding: 10px;">Disponibles</h1>
+                      <h1 class="shop_header">Disponibles</h1>
                     </th>
                     <th>
-                      <h1 style="background-color: #484868; border-radius: 10px; padding: 10px;">Precio</h1>
+                      <h1 class="shop_header">Precio</h1>
                     </th>
                     <th>
-                      <h1 style="background-color: #484868; border-radius: 10px; padding: 10px;">Cantidad</h1>
+                      <h1 class="shop_header">Cantidad</h1>
                     </th>
                   </tr>
-                  <trO>
-                    <td><img src="Cerezas.webp" alt="Mugus" width="200" id="fruitImage1"></td>
-                    <td id="fruitAmount1">20</td>
-                    <td id="fruitPrice1">15$</td>
-                    <td><input id="input1" /></td>
-                  </tr>
-                  <trO>
-                    <td><img src="platano.webp" alt="Mugus" width="100" id="fruitImage2"></td>
-                    <td id="fruitAmount2">20</td>
-                    <td id="fruitPrice2">$10</td>
-                    <td><input id="input2" /></td>
-                  </tr>
-                  <tr>
-                    <th colspan="4" id="Confirm" onclick="confirmPurchase()" style="padding: 10px;"><button>Confirmar</button></th>
-                  </tr>
+                  
                   <br>
                 </table>
               </div>

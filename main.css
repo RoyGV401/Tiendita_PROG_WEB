@@ -1,181 +1,102 @@
 body {
-    color: white;
-    background-color: yellowgreen;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.artist_title
-{
-    font-size: 40px;
-    font-weight: bold;
-}
-
-#container
-{
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#result
-{
-  color: #000000;
-  font-weight: 100;
-  font-size: 16px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgb(255, 255, 255);
-  width: 80%;
-  height: 7%;
-}
-
-.artista{
-    background-color: orange;
-
-    height: 90vh;
-    width: 150vh;
-    text-align: center;
-    border: 4px;
-    border-radius: 7px;
-    border-style: solid;
-}
-
-.artist_image{
-    width: 80%;
-    height: 57%;
-    border: 16%;
-    border-radius: 6px;
-    border-collapse: collapse;
-    border-style: solid;
-}
-
-.player{
-    width: 80%;
-    height: 60px;
-    padding-bottom: 10%;
-}
-
-section::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-  
-
-
-/* CSS */
-.button-5 {
-  align-items: center;
-  background-clip: padding-box;
-  background-color: #484868;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
+  color: #333;
+  background-color: #f8f8f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: 96%;
+  padding: 0;
+  text-align: center;
 }
 
-.input_calc {
-  align-items: center;
-  background-clip: padding-box;
-  background-color: #8383ad;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
+.artist_title {
+  font-size: 250%;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.artist_row
+{
   margin-left: auto;
   margin-right: auto;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: 94%;
 }
 
-.button-5:hover,
-.button-5:focus {
-  background-color: #161616;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+#container {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.artista {
+  background-color: #ffcc80;
+  padding: 5vh;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fruit_image {
+  width: 10vh;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0px;
+  background: #fff;
+}
+
+.shop_header {
+  background-color: #ff7043;
+  color: white;
+  padding: 1vh;
+  border-radius: 5px;
+  font-size: 120%;
+}
+
+#calc_table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 1vh;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#calc_table th, #calc_table td {
+  padding: 3vh;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#calc_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.button-5 {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  padding: 2vh;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 120%;
+  transition: 0.3s;
 }
 
 .button-5:hover {
-  transform: translateY(-1px);
+  background-color: #e64a19;
+  transform: scale(1.05);
 }
 
-.button-5:active {
-  background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-  transform: translateY(0);
+input[type="number"] {
+  width: 8vw;
+  padding: 0.3vw;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-
-
-#calc_table
-{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: collapse;
-  
-
-}
-
-.tabla_fondo tr{
-  background-color: #8383ad;
-  
-}
-
-#enter
-{
-  background-color: #c4993c;
-
-  width: 90%;
-}
-
-#del
-{
-  background-color: #c4573c;
-
-  width: 90%;
-}
-
-#operator
-{
-  background-color: #50728d;
-}
-
-#Confirm{
-  width: 100%;
+.tr_transparent {
+  background-color: #ff7043;
+  color: white;
 }
