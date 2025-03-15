@@ -1,10 +1,14 @@
+
+
 body {
   color: #333;
-  background-color: #f8f8f8;
+  background-color: darkkhaki;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
+
+  
 }
 
 .artist_title {
@@ -25,7 +29,13 @@ body {
   margin-right: auto;
   background: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  
+  
+  background-image: url(resources/FondoFruta.jpg);
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+  
 }
 
 .artista {
